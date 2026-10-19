@@ -1,0 +1,268 @@
+<style>
+  /* CIKM 2026 schedule — scoped styles */
+  .schedule-cikm2026 .schedule-intro-lead {
+    max-width: 820px;
+    margin: 0 auto 28px;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #555;
+  }
+
+  .schedule-cikm2026 .schedule-venue-card {
+    max-width: 820px;
+    margin: 0 auto 36px;
+    padding: 16px 20px;
+    background: linear-gradient(135deg, #fafafa 0%, #f3f4f6 100%);
+    border-left: 4px solid #fed136;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06);
+    text-align: left;
+  }
+
+  .schedule-cikm2026 .schedule-venue-card strong {
+    color: #333;
+    font-weight: 700;
+  }
+
+  .schedule-cikm2026 .schedule-slides-note {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #777;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,.08);
+    border: 1px solid #e8e8e8;
+    background: #fff;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap .table {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap thead th {
+    background: linear-gradient(180deg, #2d2d2d 0%, #222 100%);
+    color: #fff;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    font-size: 13px;
+    padding: 14px 16px;
+    border: none;
+    vertical-align: middle;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap tbody td {
+    padding: 16px 18px;
+    border-color: #eee;
+    vertical-align: top;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap tbody tr:nth-child(odd) td {
+    background: #fcfcfc;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap tbody tr.row-opening td {
+    background: #f7fbfd;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap tbody tr.row-keynote td {
+    background: #fffdf5;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap tbody tr.row-break td {
+    background: #f5f5f5;
+    text-align: center;
+    font-weight: 600;
+    color: #555;
+    padding: 12px 16px;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap .session-title {
+    display: block;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #222;
+    margin-bottom: 10px;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap .session-list {
+    margin: 0;
+    padding-left: 1.1em;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap .session-list li {
+    margin-bottom: 4px;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap .time-cell {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #333;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 767px) {
+    .schedule-cikm2026 .schedule-table-wrap .time-cell {
+      white-space: normal;
+    }
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap tbody tr.row-part td {
+    background: #2d2d2d;
+    color: #fff;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    padding: 12px 18px;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap .session-desc {
+    display: block;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap .part-item {
+    margin-bottom: 18px;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap .part-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap .item-heading {
+    display: block;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .schedule-cikm2026 .schedule-table-wrap .session-list .item-name {
+    font-weight: 600;
+    color: #333;
+  }
+</style>
+
+<section id="schedule" class="schedule-cikm2026 {{ include.class }}">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Tutorial Schedule</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <p class="schedule-intro-lead">
+          In-person tutorial on the afternoon of Saturday, 7 November 2026, the tutorial day of CIKM 2026.
+        </p>
+        <div class="schedule-venue-card">
+          <strong>Date &amp; time:</strong> Saturday, 7 November 2026, 14:00 to 18:30 (Rome time), with a tea break from 16:00 to 16:30<br>
+          <strong>Room:</strong> Aula 1, Faculty of Engineering, Sapienza University of Rome (San Pietro in Vincoli)<br>
+          <strong>Format:</strong> Lecture-style tutorial with a live demonstration and hands-on session<br>
+          <span class="text-muted" style="font-size:14px;">See the <a href="https://cikm2026.diag.uniroma1.it/program/" target="_blank">CIKM 2026 programme</a> for the full conference schedule (7 to 11 November 2026).</span>
+          <p class="schedule-slides-note">
+            The slides, the Colab notebooks for the hands-on session, and a bibliography of the papers covered will be available on this page before the tutorial.
+            The notebooks build on the code, retriever indexes and agent trajectories released at <a href="https://github.com/ChuanMeng/text-ranking-in-deep-research" target="_blank">text-ranking-in-deep-research</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="schedule-table-wrap table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th style="width:20%;">Time (Rome)</th>
+                <th style="width:80%;">Session</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row-opening">
+                <td class="time-cell">14:00 to 16:00</td>
+                <td>
+                  <span class="session-title">Part I: Basics and optimization</span>
+                  <div class="part-item">
+                    <span class="item-heading">Introduction and RL primer</span>
+                    <span class="session-desc">What agentic search is and how it differs from traditional human-driven search and from standard single-step retrieval-augmented generation (RAG), followed by a short primer on the post-training and RL concepts used later, such as policies, reward design, and on-policy versus off-policy training.</span>
+                  </div>
+                  <div class="part-item">
+                    <span class="item-heading">Optimization paradigms</span>
+                    <span class="session-desc">Methods organised by what is optimized: neither the agent nor the search component, the agent only, the search component only, or both jointly.</span>
+                    <ul class="session-list">
+                      <li><span class="item-name">No optimization (prompting only):</span> prompting agents to formulate queries, search iteratively, and use the retrieved evidence (e.g., ReAct, IRCoT, Search-o1)</li>
+                      <li><span class="item-name">Agent learns to search:</span> training agents to use a fixed search component, from supervised fine-tuning to on-policy RL (e.g., Search-R1) and off-policy RL (e.g., KARL)</li>
+                      <li><span class="item-name">Search learns to serve agents:</span> training retrievers that read the agent's reasoning or learn from agent-oriented supervision (e.g., AgentIR, LRAT, Critic-R)</li>
+                      <li><span class="item-name">Agent&ndash;search joint optimization:</span> training agents and search models so that each adapts to the other (e.g., Agentic-R, CoSearch)</li>
+                    </ul>
+                  </div>
+                  <div class="part-item">
+                    <span class="item-heading">Live demonstration and hands-on</span>
+                    <span class="session-desc">A Colab notebook on BrowseComp-Plus, an open-source benchmark for agentic search over a fixed web document collection. We run an agent on one complex question, analyse its trajectory of reasoning and search calls step by step, swap in different agent backbones and retrievers, and compare agent harnesses. Participants can watch or run the notebook themselves; we host the agent models and retrievers, so no GPU is needed.</span>
+                  </div>
+                </td>
+              </tr>
+              <tr class="row-break">
+                <td colspan="2">Tea break &middot; 16:00 to 16:30</td>
+              </tr>
+              <tr class="row-keynote">
+                <td class="time-cell">16:30 to 18:30</td>
+                <td>
+                  <span class="session-title">Part II: Long-horizons, evaluation and beyond</span>
+                  <div class="part-item">
+                    <span class="item-heading">Long-horizon agentic search (deep research)</span>
+                    <span class="session-desc">Extending agentic search from a few rounds of search and reasoning to open web research workflows in which an agent decomposes complex questions, gathers and verifies evidence across many sources, and synthesizes a grounded answer or report.</span>
+                    <ul class="session-list">
+                      <li><span class="item-name">Two basic paradigms:</span> reasoning-intensive question answering and long-form report generation</li>
+                      <li><span class="item-name">Context management:</span> keeping a compact working state through compression, memory updates, or branching and folding the context</li>
+                      <li><span class="item-name">Efficiency:</span> reaching answers with fewer but more targeted search and reasoning steps</li>
+                    </ul>
+                  </div>
+                  <div class="part-item">
+                    <span class="item-heading">Evaluation for agentic search</span>
+                    <span class="session-desc">From recall of the search results and answer matching of short answers to the evaluation of long-form reports, which have no single correct answer.</span>
+                    <ul class="session-list">
+                      <li><span class="item-name">Criteria-based evaluation:</span> an LLM judge scores a report against a reference report on task-specific criteria</li>
+                      <li><span class="item-name">Nugget-based evaluation:</span> checking whether a report correctly answers the questions that represent the required information, with supporting citations</li>
+                      <li><span class="item-name">Citation-based evaluation:</span> checking whether each citation supports its claim and whether any factual claim lacks a citation, illustrated with <a href="https://trec-ragtime.github.io/" target="_blank">TREC RAGTIME</a></li>
+                    </ul>
+                  </div>
+                  <div class="part-item">
+                    <span class="item-heading">Beyond text, a single language and the web</span>
+                    <ul class="session-list">
+                      <li><span class="item-name">Multimodal:</span> agents that search over images and long-form videos</li>
+                      <li><span class="item-name">Cross-lingual:</span> agents whose supporting evidence is in languages other than that of the question</li>
+                      <li><span class="item-name">Domain-specific:</span> agents that use domain-specific tools in legal, medical and enterprise settings</li>
+                    </ul>
+                  </div>
+                  <div class="part-item">
+                    <span class="item-heading">Conclusion and open challenges</span>
+                    <span class="session-desc">Key takeaways, open challenges and future directions for agentic search, and an open discussion with the audience.</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

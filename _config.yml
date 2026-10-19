@@ -1,0 +1,34 @@
+title: Agentic Search Tutorial
+description: Tutorial series on agentic search.
+show_downloads: false
+theme: jekyll-theme-cayman
+
+# The site root (index.md) redirects here. Update this when a new edition goes online.
+latest_edition:
+  url: /cikm2026/
+  name: CIKM 2026
+
+# Defaults used when a page does not set its own values
+conference_name: "Agentic Search: Foundations, Optimization, and Long-Horizons"
+conference_cikm: "at the 35th ACM International Conference on Information and Knowledge Management (CIKM 2026)"
+conference_venue: "7 November 2026, 14:00 to 18:30, Rome, Italy"
+
+# Google Analytics: add a new GA4 measurement ID here once the site is live
+# (do not reuse the convsearch.github.io ID, or the two sites' statistics will mix).
+# google_analytics: G-XXXXXXXXXX
+
+github:
+  zip_url: http://www.google.com
+
+# One organiser collection per edition (e.g. add wsdm2027_organisers for the next edition)
+collections:
+  cikm2026_organisers:
+    output: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - jekyll-theme-cayman.gemspec
+  - LICENSE
+  - README.md
+  - vendor

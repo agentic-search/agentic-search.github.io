@@ -136,6 +136,13 @@
     margin-bottom: 8px;
   }
 
+  .schedule-cikm2026 .schedule-table-wrap .session-sublist {
+    margin: 4px 0 2px;
+    padding-left: 1.2em;
+    list-style: circle;
+    color: #555;
+  }
+
   .schedule-cikm2026 .schedule-table-wrap .part-item {
     margin-bottom: 18px;
   }
@@ -169,16 +176,15 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <p class="schedule-intro-lead">
-          In-person tutorial on the afternoon of Saturday, 7 November 2026, the tutorial day of CIKM 2026.
+          Half-day in-person tutorial on Saturday, 7 November 2026, during CIKM 2026.
         </p>
         <div class="schedule-venue-card">
-          <strong>Date &amp; time:</strong> Saturday, 7 November 2026, 14:00 to 18:30 (Rome time), with a tea break from 16:00 to 16:30<br>
-          <strong>Room:</strong> Aula 1, Faculty of Engineering, Sapienza University of Rome (San Pietro in Vincoli)<br>
-          <strong>Format:</strong> Lecture-style tutorial with a live demonstration and hands-on session<br>
-          <span class="text-muted" style="font-size:14px;">See the <a href="https://cikm2026.diag.uniroma1.it/program/" target="_blank">CIKM 2026 programme</a> for the full conference schedule (7 to 11 November 2026).</span>
+          <strong>Format:</strong> In-person tutorial<br>
+          <strong>Date &amp; time:</strong> Saturday, 7 November 2026, 14:00 to 18:30 (Rome time)<br>
+          <strong>Room:</strong> Aula 1, Sapienza University of Rome<br>
+          <span class="text-muted" style="font-size:14px;">Co-located with CIKM 2026 in Rome, Italy (7 to 11 November 2026)</span>
           <p class="schedule-slides-note">
-            The slides, the Colab notebooks for the hands-on session, and a bibliography of the papers covered will be available on this page before the tutorial.
-            The notebooks build on the code, retriever indexes and agent trajectories released at <a href="https://github.com/ChuanMeng/text-ranking-in-deep-research" target="_blank">text-ranking-in-deep-research</a>.
+            Slides will be available here before the tutorial.
           </p>
         </div>
       </div>
@@ -199,24 +205,18 @@
                 <td class="time-cell">14:00 to 16:00</td>
                 <td>
                   <span class="session-title">Part I: Basics and optimization</span>
-                  <div class="part-item">
-                    <span class="item-heading">Introduction and RL primer</span>
-                    <span class="session-desc">What agentic search is and how it differs from traditional human-driven search and from standard single-step retrieval-augmented generation (RAG), followed by a short primer on the post-training and RL concepts used later, such as policies, reward design, and on-policy versus off-policy training.</span>
-                  </div>
-                  <div class="part-item">
-                    <span class="item-heading">Optimization paradigms</span>
-                    <span class="session-desc">Methods organised by what is optimized: neither the agent nor the search component, the agent only, the search component only, or both jointly.</span>
-                    <ul class="session-list">
-                      <li><span class="item-name">No optimization (prompting only):</span> prompting agents to formulate queries, search iteratively, and use the retrieved evidence (e.g., ReAct, IRCoT, Search-o1)</li>
-                      <li><span class="item-name">Agent learns to search:</span> training agents to use a fixed search component, from supervised fine-tuning to on-policy RL (e.g., Search-R1) and off-policy RL (e.g., KARL)</li>
-                      <li><span class="item-name">Search learns to serve agents:</span> training retrievers that read the agent's reasoning or learn from agent-oriented supervision (e.g., AgentIR, LRAT, Critic-R)</li>
-                      <li><span class="item-name">Agent&ndash;search joint optimization:</span> training agents and search models so that each adapts to the other (e.g., Agentic-R, CoSearch)</li>
-                    </ul>
-                  </div>
-                  <div class="part-item">
-                    <span class="item-heading">Live demonstration and hands-on</span>
-                    <span class="session-desc">A Colab notebook on BrowseComp-Plus, an open-source benchmark for agentic search over a fixed web document collection. We run an agent on one complex question, analyse its trajectory of reasoning and search calls step by step, swap in different agent backbones and retrievers, and compare agent harnesses. Participants can watch or run the notebook themselves; we host the agent models and retrievers, so no GPU is needed.</span>
-                  </div>
+                  <ul class="session-list">
+                    <li>Introduction to agentic search and an RL primer</li>
+                    <li>Optimization paradigms
+                      <ul class="session-sublist">
+                        <li>No optimization (prompting only)</li>
+                        <li>Agent learns to search</li>
+                        <li>Search learns to serve agents</li>
+                        <li>Agent&ndash;search joint optimization</li>
+                      </ul>
+                    </li>
+                    <li>Live demonstration and hands-on</li>
+                  </ul>
                 </td>
               </tr>
               <tr class="row-break">
@@ -226,36 +226,19 @@
                 <td class="time-cell">16:30 to 18:30</td>
                 <td>
                   <span class="session-title">Part II: Long-horizons, evaluation and beyond</span>
-                  <div class="part-item">
-                    <span class="item-heading">Long-horizon agentic search (deep research)</span>
-                    <span class="session-desc">Extending agentic search from a few rounds of search and reasoning to open web research workflows in which an agent decomposes complex questions, gathers and verifies evidence across many sources, and synthesizes a grounded answer or report.</span>
-                    <ul class="session-list">
-                      <li><span class="item-name">Two basic paradigms:</span> reasoning-intensive question answering and long-form report generation</li>
-                      <li><span class="item-name">Context management:</span> keeping a compact working state through compression, memory updates, or branching and folding the context</li>
-                      <li><span class="item-name">Efficiency:</span> reaching answers with fewer but more targeted search and reasoning steps</li>
-                    </ul>
-                  </div>
-                  <div class="part-item">
-                    <span class="item-heading">Evaluation for agentic search</span>
-                    <span class="session-desc">From recall of the search results and answer matching of short answers to the evaluation of long-form reports, which have no single correct answer.</span>
-                    <ul class="session-list">
-                      <li><span class="item-name">Criteria-based evaluation:</span> an LLM judge scores a report against a reference report on task-specific criteria</li>
-                      <li><span class="item-name">Nugget-based evaluation:</span> checking whether a report correctly answers the questions that represent the required information, with supporting citations</li>
-                      <li><span class="item-name">Citation-based evaluation:</span> checking whether each citation supports its claim and whether any factual claim lacks a citation, illustrated with <a href="https://trec-ragtime.github.io/" target="_blank">TREC RAGTIME</a></li>
-                    </ul>
-                  </div>
-                  <div class="part-item">
-                    <span class="item-heading">Beyond text, a single language and the web</span>
-                    <ul class="session-list">
-                      <li><span class="item-name">Multimodal:</span> agents that search over images and long-form videos</li>
-                      <li><span class="item-name">Cross-lingual:</span> agents whose supporting evidence is in languages other than that of the question</li>
-                      <li><span class="item-name">Domain-specific:</span> agents that use domain-specific tools in legal, medical and enterprise settings</li>
-                    </ul>
-                  </div>
-                  <div class="part-item">
-                    <span class="item-heading">Conclusion and open challenges</span>
-                    <span class="session-desc">Key takeaways, open challenges and future directions for agentic search, and an open discussion with the audience.</span>
-                  </div>
+                  <ul class="session-list">
+                    <li>Long-horizon agentic search (deep research)
+                      <ul class="session-sublist">
+                        <li>Reasoning-intensive QA and report generation</li>
+                        <li>Context management</li>
+                        <li>Efficiency</li>
+                      </ul>
+                    </li>
+                    <li>Evaluation for agentic search</li>
+                    <li>Beyond text, a single language and the web</li>
+                    <li>Conclusion and open challenges</li>
+                    <li><em>Discussion</em></li>
+                  </ul>
                 </td>
               </tr>
             </tbody>

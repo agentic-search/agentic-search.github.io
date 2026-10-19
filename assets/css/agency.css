@@ -984,13 +984,11 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136
 }
-/* CIKM 2026 edition (body.home-cikm2026 on the cikm2026 page).
-   header-bg.jpg (inherited from convsearch) shows Padua, not Rome, so this edition uses a plain dark header.
-   To use a photo of Rome, add assets/img/rome.jpg and replace the background-image line with:
-   background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url(../img/rome.jpg); */
+/* CIKM 2026 edition (body.home-cikm2026 on the cikm2026 page): Rome header photo with a dark overlay for legible white text. */
 body.home-cikm2026 header {
-    background-color: #1f2a36;
-    background-image: linear-gradient(135deg, #16202b 0%, #2a3a4c 100%);
+    background-color: #333;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/rome.jpg);
+    background-position: center 60%;
 }
 
 body.home-cikm2026 header .intro-text {
